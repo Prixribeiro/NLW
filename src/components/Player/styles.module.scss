@@ -1,5 +1,5 @@
 .playerContainer {
-    width: 23.5rem;
+    width: 21.5rem;
     height: 100vh;
 
     padding: 3rem 4rem;
@@ -28,6 +28,29 @@
         & .empty{
             opacity: 0.5;
         }
+    }
+}
+
+.currentPlaying {
+    text-align: center;
+
+    img {
+        border-radius: 1.5rem;
+    }
+
+    strong {
+        display: block;
+        margin-top: 2rem;
+        font: 400 1.25rem Lexend, sans-serif;
+        line-height: 1.75rem;
+    }
+
+    span {
+        font-size: 0.75rem;
+        display: block;
+        margin-top: 1rem;
+        opacity: 0.6;
+        line-height: 1.5rem;
     }
 }
 
@@ -82,11 +105,29 @@
         border: 0;
         font-size: 0;
 
+        transition: filter 0.2s;     
+
+        &:disabled{
+            cursor: default;
+        }
+
+        &:hover:not(:disabled){
+            filter: brightness(0.7);
+            
+        }
+
         &.playButton {
             width: 4rem;
-            height: 4rem;
-            border-radius: 1rem;
+            height: 2rem;
+            border-radius: 0.25rem;
             background: var(--purple-400);
+
+            transition: filter 0.2s; 
+
+            &:hover:not(:disabled){
+                filter: brightness(0.95);
+                
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 .homepage{
-    padding: 0.875rem;
+    padding: 1rem;
     height: calc(100vh - 6.5rem);
     overflow-y: scroll;
 
@@ -151,18 +151,18 @@
             }
 
             button {  
-                width: 0.75rem;
-                height: 0.75rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 background: var(--white);
                 border: 1px solid var(--gray-100);
-                border-radius: 0.5rem;
+                border-radius: 0.675rem;
                 font-size: 0;
     
                 transition: filter 0.2s;
     
                 img {
-                    width: 0.5rem;
-                    height: 0.5rem;
+                    width: 0.75rem;
+                    height: 0.75rem;
                 }
     
                 &:hover {
